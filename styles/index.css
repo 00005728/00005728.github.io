@@ -48,7 +48,7 @@ nav {
 
 nav ul li {
     
-    display: inline; /* make the ul list items inline elements */
+    display: inline-block; /* make the ul list items inline elements */
     padding: 0 20px 0 20px;
 }
 /*Colors for active page and hovered*/
@@ -280,7 +280,7 @@ h9 {
   .card {
     /* Styling */
     width: 42vw;
-    height: 52vh;
+    height: 56vh;
     background: #535767;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     /* Card flipping effects */
