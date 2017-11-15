@@ -1,0 +1,988 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+}
+
+.container-fluid {
+    text-align: center;
+    width: auto; /*takes 100 of screen size */
+    padding: 0;
+    
+     /* overflow: hidden;  */
+}
+/*header starts here*/
+
+#branding {
+    display: inline-block;
+    padding: 10vh 10vw 10vh 10vw;
+    
+}
+
+#navbar {
+    display: inline-block;
+}
+
+header {   
+    background-color: transparent;
+    
+
+    z-index: 1; /* makes the header to be above of all other elements */
+    
+}
+/* links from navbar */
+nav a {
+    font-family: 'Poppins', sans-serif; /*use poppins, or use any sans-serif font if the former is not available*/    
+    color: #FFFFFF;
+    text-decoration: none !important; /*delete underlining*/
+    font-style: solid;
+    font-weight: 900;
+    line-height: 0.5;
+    font-size: 15px;
+}
+
+nav {
+    position: absolute;  
+}
+
+nav ul li {
+    
+    display: inline; /* make the ul list items inline elements */
+    padding: 0 20px 0 20px;
+}
+/*Colors for active page and hovered*/
+#active {
+    padding: 3px 10px 3px 10px;
+    border-radius: 20px;
+    border-color: #4eceaf;
+    border: solid 2px;
+    color: #4eceaf;
+    
+}
+
+nav a:hover {
+    color: #4eceaf;
+    transition: 200ms;
+}
+/* period in which the original color comes back after stopping hovering */
+nav a:not(:hover) {
+    transition: 600ms; /**/
+}
+
+
+
+ #relax {
+    
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 6px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFF;
+} 
+
+.btn btn-primary a {
+    border-color: #4eceaf;
+}
+#bg {
+    position: relative;
+    height: 750px;
+    padding: auto;
+    margin: auto;
+    list-style-type: none;
+    z-index: -1;
+}
+#bg-contacts {
+    
+    height: 750px;
+    padding: auto;
+    margin: auto;
+    list-style-type: none;
+    z-index: -1;
+}
+
+#slides {
+    position: relative;
+    height: 750px;
+    padding: auto;
+    margin: auto;
+    list-style-type: none;
+    z-index: -1;
+    
+}
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.showing {
+    opacity: 1;
+    z-index: 999;
+}
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #535767;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 1.03;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -1.7px;
+   
+  }
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #4eceaf;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 1.03;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -1.7px;
+}
+h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -1px;
+    text-align: inherit;
+    color: #000;
+}
+h4 {
+    text-align: center;
+}
+#contact h8 {
+    color: #fff;
+    font-size: 3.5rem; 
+    font-family: Gilroy-ExtraBold;
+}
+h9 {
+    color: #fff;
+    font-size: 2rem; 
+    font-family: Gilroy-ExtraBold;
+}
+
+#slides  h5 {
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    margin: 45vh 35vw;
+    color: #fff;
+    font-size: 3.5rem; 
+    font-family: Gilroy-ExtraBold;
+}
+#bg h5 {
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    margin: 45vh 35vw;
+    color: #fff;
+    font-size: 3.5rem; 
+    font-family: Gilroy-ExtraBold;
+}
+
+#slides h6 {
+    position: absolute;
+    font-family: Gilroy-ExtraBold;
+    text-align: center;
+    z-index: 999; 
+    color: #fff;
+    padding: 57vh 22vw;
+    font-size: 1.5em;
+}
+#bg h6 {
+    position: absolute;
+    font-family: Gilroy-ExtraBold;
+    text-align: center;
+    z-index: 999; 
+    color: #fff;
+    padding: 57vh 22vw;
+    font-size: 1.5em;
+}
+#bg h7 {
+    position: absolute;
+    z-index: 999;
+    color: #fff;
+    margin-top: 25% ;
+    margin-left: -25%;
+    margin-right: 25%; 
+    font-size: 2rem; 
+    font-family: Gilroy-ExtraBold;
+}
+@media screen and (max-width: 1023px) {
+    h6{font-size:70%;}
+    
+}
+
+@media screen and (max-width: 800px) {
+     
+    h1 {font-size: 20px;}                                  /* Responsivness */
+    .greeting {font-size:10px; padding-top:0%}
+    #bg h7 { font-size: 13px; padding-top: 20%}
+    #bg h5 {font-size:30px; margin-top: 35%;}
+        #branding{padding-top: 10%;
+                    padding-left:0%;
+                    padding-right:0%;}}
+
+
+@media screen and (max-width: 500px) {
+    h9 {display: none;} 
+    h1 {font-size: 20px; letter-spacing: 5px;}
+    #slides h5 { margin-top:60%; font-size:25px;}
+    .greeting {font-size:10px; padding-top:5%}
+    .greeting h7 { font-size: 5%;}
+    #bg h7 {font-size:10px; padding-top: 50%}
+    #bg h5 {font-size:20px; margin-top: 60%;}
+        #branding{padding-top: 10%;
+                    padding-left:0%;
+                    padding-right:0%;}}
+
+  /* cards soon */
+  .container {
+    margin-left: 4vw;
+    width: 90%;
+    cursor: pointer;
+}
+
+  .soon {
+    
+    width: 100%;
+    /* Styling */
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    /* Center it */
+}
+@media screen and (max-width: 1023px) {
+    .title{display: none;}
+    .soon{display: none;}
+    
+}
+
+#main-content { 
+    background-color: #fff;
+     }   
+  
+  .card {
+    /* Styling */
+    width: 42vw;
+    height: 52vh;
+    background: #535767;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    /* Card flipping effects */
+    transform-style: preserve-3d;
+    transition: 0.6s;
+  }
+  
+  .side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Fix Chrome rendering bug */
+    transform: rotate(0deg) translateZ(1px);
+  }
+  
+  /* Flip the card on hover */
+  .soon:hover .card,
+  .back {
+    transform: rotateY(-180deg) translateZ(1px);
+  }
+  
+  /* Front styling */
+  .front {
+    /* Center the name + outline (almost) */
+    line-height: 11vh;
+    /* Height - some (because visual center is a little higher than actual center) */
+    text-align: left;
+  }
+  #front1 {
+    background: url("../images/poster2.jpg");
+  }
+  #front2 {
+    background: url("../images/poster3.jpg");
+}
+#front3 {
+    background: url("../images/poster4.jpg");
+}
+#front4 {
+    background: url("../images/poster1.jpg");
+}
+  
+  .logo {
+    margin-top: 5px;
+    color: #fff;
+    
+    display: inline-block;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.0em;
+    font-weight: 20px;
+    line-height: 32px;
+    letter-spacing: 8px;
+  }
+  
+  /* Back styling */
+  .back {
+    padding: 30px;
+  }
+  
+  .name {
+    color: #4eceaf;
+    margin-bottom: 0;
+  }
+  
+  p {
+    margin: 0.8em 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+  }
+  
+  .info {
+    position: absolute;
+    bottom: 4vh;
+    left: 2vw;
+    color: #fff;
+  }
+  
+  .property {
+    color: #4eceaf;
+  }
+  
+  /* Make semi-responsive */
+  @media (max-width: 600px) {
+    .card {
+      transform: scale(0.5);
+    }
+  
+    .soon:hover .card {
+      transform: scale(0.5) rotateY(-180deg) translateZ(1px);
+    }
+
+  }
+
+
+
+.trailers {
+  padding-left: 13vw;
+}
+
+
+
+/*movie list pages*/
+/*movie boxes where poster is on the left and description on the right*/
+
+
+.movie-box-left aside {
+    width: 75%; /*aside element of movie box takes 75% width*/
+    text-align: justify; 
+    float: right; /*set it to te right*/
+}
+
+.movie-box-left .poster {
+    width: 25%;
+    display: inline-block; /*change the poster block to inline-block element in order to float*/
+}
+/*movie boxes where poster is on the left and description on the right, almost the same as for previous*/
+.movie-box-right aside {
+    width: 75%;  
+    text-align: justify;
+    float: left;
+}
+
+.movie-box-right .poster {
+    width: 25%;
+    display: inline-block;
+}
+
+.movie-box-right p {
+    margin-right: 30px;
+}
+/*name of the movie*/
+.movies h3 {
+    text-align: center;
+}
+
+.poster img {
+    width: 90%; /*take 90% width of section element*/
+
+    display: inline-block; /*make the poster inline-block*/
+    border-radius: 20px; /* make a little rounded corners */
+    margin: 25px 0 25px 0; /*leave 25px on top and bottom, 0 for left and right*/
+}
+
+.movie-box-left, .movie-box-right {
+    border-top: 2px solid #535767; /*border-line on top of each movie box*/
+}
+aside h3 {
+    color: #4eceaf;
+}
+b {
+    color: #4eceaf;
+}
+
+/* music player */
+.info h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    cursor: default;
+  }
+  
+  .info h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8pt;
+    font-weight: 400;
+    cursor: default;
+  }
+  
+  .info h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+    font-weight: 300;
+    color: white;
+    cursor: default;
+  }
+  
+  .player {
+    display: inline-block;
+    z-index: 9999;
+    height: 26vh;
+    width: 26vw;
+    background-color: transparent;
+    position: absolute;
+    top: 80%;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  
+  .cover {
+   width: 15vw;
+   position: absolute;
+   left: 0;
+   top: 0;
+  }
+  .cover img {
+    height: 25vh;
+    width: 13vw;
+  }
+  
+  .info h1 {
+    margin-top: 15vh;
+    margin-left: 11.5vw;
+    line-height: 0;
+  }
+  .info h4 {
+    margin-left: 11.5vw;
+    line-height: 3vh;
+    color: #fff;
+  }
+  .info h2 {
+    margin-left: 12vw;
+  }
+  
+  .button-items {
+    margin-left: 12vw;
+  }
+  
+  #slider {
+    width: 11vw;
+    height: 0.5vh;
+    background: #151518;
+    border-radius: 2px;
+  }
+  #slider div {
+    width: 0.2vw;
+    height: 0.5vh;
+    margin-top: 1px;
+    background: #4eceaf;
+    border-radius: 2px;
+  }
+  
+
+  
+  .controls {
+    margin-top: 3vh;
+  }
+  .controls svg:nth-child(2) {
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  
+  #play {
+    padding: 5;
+    width: 5vw;
+    height: 4vh;
+    x: 0px;
+    y: 0px;
+    enable-background: new 0 0 25 25;
+  }
+  #play g {
+    stroke: #FEFEFE;
+    stroke-width: 1;
+    stroke-miterlimit: 10;
+  }
+  #play g path {
+    fill: #FEFEFE;
+  }
+  
+  #play:hover {
+    cursor: pointer;
+  }
+  #play:hover g {
+    stroke: #4eceaf;
+    cursor: pointer;
+  }
+  #play:hover g path {
+    fill: #4eceaf;
+    cursor: pointer;
+  }
+  
+  .step-backward {
+    width: 18px;
+    height: 18px;
+    enable-background: new 0 0 25 25;
+    margin-bottom: 5px;
+  }
+  .step-backward g polygon {
+    fill: #FEFEFE;
+  }
+  
+  .step-foreward {
+    width: 18px;
+    height: 18px;
+  
+    enable-background: new 0 0 25 25;
+    margin-bottom: 5px;
+  }
+  .step-foreward g polygon {
+    fill: #FEFEFE;
+  }
+  
+  #pause {
+
+    enable-background: new 0 0 25 25;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: -4.7vw;
+    cursor: pointer;
+  }
+  #pause rect {
+    fill: white;
+  }
+  
+  #pause:hover rect {
+    fill: #4eceaf;
+  }
+  
+  .step-backward g polygon:hover, .step-foreward g polygon:hover {
+    fill: #4eceaf;
+    cursor: pointer;
+  }
+  
+  #skip {
+    float: right;
+    margin-top: 10px;
+  }
+  
+  .expend {
+    padding: 0.5px;
+    cursor: pointer;
+  }
+  .expend svg:hover g polygon {
+    fill: #4eceaf;
+  }
+  
+
+ 
+
+/* footer */
+ 
+
+  #myFooter {
+    font-family: 'Poppins', sans-serif;
+   
+    color: white;
+    padding-top: 25px;
+   max-width:100%;
+    background-image: url(../images/footer5.jpg)
+}
+footer li {
+    font-weight: 900;
+    line-height: 0.5;
+    font-size: 17px;
+    padding:0 15px;
+    display: inline-block;
+ 
+}
+#myFooter .footer-copyright {
+    padding-top: 10px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .navbar-brand {
+    margin-top: 10px;
+    height: 65px;
+}
+
+#myFooter ul {
+    padding-top: 5vh;
+    padding-left: 10vw;
+    line-height: 2;
+    display: inline-block;
+}
+
+
+#myFooter a {
+    color: #fff;
+    text-decoration: none;
+}
+#myFooter button a:hover {
+    color: #000;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: #4eceaf;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #fff;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+   
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .btn {
+    color: white;
+    background-color: #4eceaf;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {                     /* responsive*/
+        text-align: center;
+    }
+    
+}
+#myFooter{
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+ }
+
+#footer-logo {
+    display: inline-block;
+    padding: 5vh 3vw 5vh 3vw;
+} 
+#myFooter .footer-copyright {
+    background-color: #363636;
+    opacity: 0.6;    
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 8vw;
+    width: 100%;
+    text-align: left;
+} 
+
+/* Table and button */
+#target {
+    display: none;
+}
+
+.Show {
+    
+    font-family: Gilroy-ExtraBold;
+    font-size: 16pt;
+    text-transform: uppercase;
+    color: #000 ;
+    background-color: #4eceaf ;
+    border-radius: 20px;
+    border: none;
+    height: 5.5vh;
+    width: 90px;
+    margin: 47%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 10px;
+}
+
+.Hide {
+    
+    font-family: Gilroy-ExtraBold;
+    font-size: 16pt;
+    text-transform: uppercase;
+    display:none;      /* button hide is none */
+    color: #4eceaf;
+    background-color: #000 ;
+    border-radius: 20px;
+    border: none;
+    height: 5.5vh;
+    width: 90px;
+    margin: 47%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+table {
+    border-collapse: collapse; /*make the table borders merge into one border in row*/
+    width: 100%; /*take 100% width of container*/
+
+}
+
+th {
+    text-transform: uppercase; /* all table heading with capital letters */
+    font-family: Gilroy-ExtraBold;
+    
+}
+th, td {
+    text-decoration: none !important;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 0.1em solid #333; /*has border only on bottom*/
+    font-family: Gilroy-ExtraBold;    
+    
+}
+
+td a{
+    color: #000;
+    text-transform: uppercase;
+}
+td a:hover {
+    color: #4eceaf;
+    text-decoration: none;
+    
+}
+tr:hover{
+    color: #4eceaf;                           /* change the color of whole row text while hovered */
+    transition: 100ms;       
+}
+tr:not(:hover) {                                     /* period of time when original color returns */
+    transition:200ms
+}
+
+th {
+    font-size: 16pt;
+    background-color: #000000;
+    color: white;
+    margin: 0px 0px 10em 0px;
+}
+.rwd-table {
+    margin: 1em 0;
+    min-width: 300px;
+  }
+  .rwd-table tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  .rwd-table th {
+    display: none;         /*  responsive  */
+  }
+  .rwd-table td {
+    display: block;  /*  responsive  */
+  }
+  .rwd-table td:first-child {
+    padding-top: .5em;           /* when the screen are made lower padding-top will be 0.5em*/  
+  }
+  .rwd-table td:last-child {
+    padding-bottom: .5em;         /* when the screen are made lower padding-bottom will be 0.5em*/
+  }
+
+  @media (min-width: 800px) {      /*  responsive - when the width is lower than 800px, the table is hidden  */
+    .rwd-table td:before {
+      display: none;
+    }
+  }
+  .rwd-table th, .rwd-table td {
+    text-align: left;                   /*  responsive - when the width is lower than 800px, the text transform to the left side  */
+  }
+  @media (min-width: 800px) {
+    .rwd-table th, .rwd-table td {
+      display: table-cell;
+      padding: .25em .5em;
+    }
+    .rwd-table th:first-child, .rwd-table td:first-child {
+      padding-left: 0;
+    }
+    .rwd-table th:last-child, .rwd-table td:last-child {
+      padding-right: 0;
+    }
+  }
+  
+  .rwd-table {
+    border-radius: .4em;
+    overflow: hidden;
+  }
+ 
+  .rwd-table th, .rwd-table td {
+    margin: .5em 1em;
+  }
+  @media (min-width: 800px) {
+    .rwd-table th, .rwd-table td {
+      padding: 1em !important;
+    }
+  }
+  .rwd-table th, .rwd-table td:before {
+    color: #4eceaf;
+  }
+/* contact form */
+
+ #form {
+    width: 100%;
+}
+#form label {
+    font-size: 20px;
+    font-family: Gilroy-ExtraBold;
+    float:left;
+    color: #fff;
+    padding: 2;
+    letter-spacing: 1px;
+}
+
+#form-name,
+#form-email,
+#form-message {
+    
+    background: transparent;
+    
+    margin: 0 0 .5em;
+    height: 4em;
+    border-radius: 0;
+    border-color: #fff;
+    color: #fff;
+    -webkit-transition: all ease .5s;
+       -moz-transition: all ease .5s;
+        -ms-transition: all ease .5s;
+         -o-transition: all ease .5s;
+            transition: all ease .5s;
+}
+
+#form-name:focus,
+#form-email:focus,
+#form-message:focus {
+    
+    border-color: #fff;
+    color: #fff;
+}
+
+#form-message {
+    height: 200px;
+    margin: 0 0 1em;    
+}
+
+#form-send { 
+    font-family: Gilroy-ExtraBold;
+    font-weight: 400;
+    font-size: 20px;
+    background: transparent;
+    border-radius: 0;
+    border-style: none;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .125em;
+    margin: 0;
+    padding: 1em 0;
+    display: inline-block;
+    -webkit-transition: all ease .5s;
+       -moz-transition: all ease .5s;
+        -ms-transition: all ease .5s;
+         -o-transition: all ease .5s;
+            transition: all ease .5s;
+}
+
+#form-send:hover {
+    color: #4eceaf ;
+    text-decoration: none;
+}
+
+
+/* confirmation */
+
+#confirm-page {
+    font-family: Gilroy-ExtraBold;
+    height: 100vh;
+    padding: 10vh 5vw;
+}
+.glyphicon {
+    color: #4eceaf;
+    font-size: 5em;
+    padding: .25em;
+}
+#thank {
+    font-size: 3em;
+ 
+    font-weight: 500;
+    color: #fff;
+}
+
+#thank-msg {
+    line-height: 1.25em;
+    color: #fff;
+}
+
+.home-link {
+    text-transform: uppercase;
+    padding: 1em;
+    margin: .5em;
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: all ease .5s;
+}
+
+.home-link a:hover {
+    color: #fff;   /* hover of "a" when console brings up to the link "a"  */
+    text-decoration: none; 
+}
+
+
